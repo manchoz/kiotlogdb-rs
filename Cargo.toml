@@ -1,0 +1,19 @@
+[package]
+name = "kiotlogdb"
+version = "0.1.0"
+authors = ["Giampaolo Mancini <giampaolo@trampolineup.com>"]
+
+[dependencies]
+serde = "1.0.27"
+serde_derive = "1.0.27"
+serde_json = "1.0.9"
+uuid = "0.5.1"
+diesel = { version = "1.1.1", features = ["postgres", "uuid", "serde_json"] }
+dotenv = "0.10.1"
+rand = "0.4.0"
+base64 = "0.9.0"
+#openssl-sys = "*"
+
+#[patch.crates-io]
+# Needed for Postgres. Patches the build script to support cross-compilation.
+#pq-sys = { git = 'https://github.com/golddranks/pq-sys' }

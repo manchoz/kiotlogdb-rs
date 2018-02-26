@@ -28,7 +28,7 @@ fn main() {
         println!();
     }
 
-    let device_uuid = Uuid::parse_str("f4078979-11e5-414f-928e-6fb2690e1cf5").unwrap();
+    let device_uuid = Uuid::parse_str("5b20fcb9-667c-4b4d-b220-ca0592c59459").unwrap();
 
     let first_device = devices
         .find(device_uuid)
